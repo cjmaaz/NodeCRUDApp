@@ -1,0 +1,36 @@
+POST http://localhost:3000/api/users
+Content-Type: application/x-www-form-urlencoded
+
+{
+    "name":"Lango Bhai",
+    "email": "lango@mail.com",
+    "gender": "Female",
+    "status":"Active"
+}
+###
+POST http://localhost:3000/api/users
+Content-Type: application/x-www-form-urlencoded
+
+{
+    "name":"Maaz Rahman",
+    "email": "maaz@mail.com",
+    "gender": "Male",
+    "status":"Inactive"
+}
+
+###
+GET http://localhost:3000/api/users
+
+###
+GET http://localhost:3000/api/users?id=60b2529aeb6db10b04c3edbf
+
+###
+PUT http://localhost:3000/api/users/60b230e7b98a8a43f48280c4
+Content-Type: application/x-www-form-urlencoded
+
+{
+    "status":"Active"
+}
+
+###
+DELETE http://localhost:3000/api/users/60b238f3eb6db10b04c3edbc
